@@ -1,0 +1,158 @@
+body{
+   padding: 0;
+   margin: 0;
+   overflow-x: hidden;
+   display: flex;
+   flex-direction: column;
+}
+.nav-area{
+    overflow: hidden;
+    padding-right: 250px;
+    height: auto;
+}
+.nav-area a{
+    display: block;
+    text-align: center;
+    float: left;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-size: 17px;
+    color: #fff;
+    padding-left: 15px;
+}
+.nav-area a:hover{
+    color: #111;
+    background-color: burlywood;
+    border-radius: 40px;
+    box-sizing: border-box;
+}
+.nav-area ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 220px;
+}
+.nav-area ul:hover{
+    transform: translateY(20px, 10px);
+    transition: .5s ease;
+    font-size: 25px;
+
+}
+.nav-area .buttons{
+    overflow: hidden;
+    padding-right: 15px;
+}
+.nav-area .buttons a{
+    display: block;
+    float: right;
+}
+
+.body_area{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    background-image: url(../images/Style.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.name{
+    display: block;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 80px;
+    font-weight: 250;
+    color: burlywood;
+}
+.book{
+    text-align: center;
+    size: 100px;
+}
+.book a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 200;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.book a:hover{
+    color: goldenrod;
+    transform: translateY(20px, -5px);
+    transition: .4s ease-in-out;
+    font-size: 38px;
+    text-decoration: underline goldenrod;
+}
+footer{
+    background-color: #111;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    color: burlywood;
+    display: flex;
+    justify-content: space-evenly;
+}
+.container1{
+    float: left;
+    text-align: center;
+}
+.container1 h2{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 85px;
+}
+.container1 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+.container1 a:hover{
+    color: #111;
+    background-color: #fff;
+    background-size: 14px 14px;
+}
+.container2{
+    float: none;
+    text-align: center;
+} 
+.container2 h2{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container2 a{
+    text-decoration: none;
+    
+}
+.container3{
+    padding-right: 90px;
+    padding-top: 5px;
+}
+.container3 h2{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container3 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+@media screen and (max-width: 650px) {
+    .name{
+        font-size: 35px;
+        margin-top: 5px;
+        text-align: left;
+        padding-top: 0;
+        padding-left: 12px;
+    }
+    .nav-area{
+        display: none;
+    }
+    .body_area{
+        background-image: url(/Style.jpg) flex;
+        width: 100%;
+    }
+    
+}
