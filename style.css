@@ -1,0 +1,166 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    margin-bottom: 20%;
+    /* background-image: url(../images/Salon4.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+#page-container {
+    position: relative;
+    min-height: 100%;
+}
+.service{
+    padding: 5px 20px;
+    font-family: sans-serif;
+    height: 100%;
+    min-height: 100vh;
+
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 45px;
+    margin: auto;
+}
+.max-width h1{
+    text-align: center;
+    position: relative;
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+.max-width h1::after{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    background: #fff;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    padding: 50px 25px;
+    width: calc(26% - 20px);
+    border-radius: 6px;
+    border: 1px;
+    margin-bottom: 10px;
+    background: burlywood;
+    text-align: center;
+    user-select: none;
+    transition: all 0.3s ease;
+}
+.card:hover{
+    background-color: rgba(146, 90, 26, 0.349);
+}
+.box{
+    transition: all o.3s ease;
+}
+.card:hover .box{
+    transform: scale(1.05);
+}
+.box h3{
+    font-size: 25px;
+    padding: 10px 0 7px;
+}
+@media screen and (max-width: 1190px){
+    .max-width{
+        padding: 0 25px;
+    }
+    .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 1190px){
+    .card{
+        width: 100%;
+    }
+} */
+
+body {
+	margin: 0;
+	padding-top: 20px;
+	font-family: sans-serif;
+}
+
+.service {
+	padding: 5px 20px;
+	font-family: sans-serif;
+	height: 100%;
+	min-height: 100vh;
+	max-width: 1350px;
+	margin: 0 auto;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.table td,
+.table th {
+	padding: 12px 15px;
+	border: 1px solid #ddd;
+	text-align: center;
+	font-size: 16px;
+}
+
+.table th {
+	background-color: #92c9e6;
+	color: #ffffff;
+}
+
+.table tbody tr:nth-child(even) {
+	background-color: #d1e8f5;
+}
+
+/*responsive*/
+
+@media (max-width: 500px) {
+	.table thead {
+		display: none;
+	}
+
+	.table,
+	.table tbody,
+	.table tr,
+	.table td {
+		display: block;
+		width: 100%;
+	}
+	.table tr {
+		margin-bottom: 15px;
+	}
+	.table td {
+		padding-left: 50%;
+		text-align: left;
+		position: relative;
+	}
+	.table td::before {
+		content: attr(data-label);
+		position: absolute;
+		left: 0;
+		width: 50%;
+		padding-left: 15px;
+		font-size: 15px;
+		font-weight: bold;
+		text-align: left;
+	}
+}
